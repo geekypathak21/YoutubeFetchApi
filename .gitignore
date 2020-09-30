@@ -1,0 +1,7 @@
+__pycache__/
+env/
+venv/
+.env
+**/.DS_Store
+
+cron_jobs.log
