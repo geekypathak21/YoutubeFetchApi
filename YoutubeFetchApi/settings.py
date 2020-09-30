@@ -58,9 +58,9 @@ CRON_CLASSES = [
     "api.cron.CallYoutubeApi",
 ]
 
-# CRONJOBS = [
-#     ('*/5 * * * *', 'youtube_fetch_api.api.cron.CallYoutubeApi','>> ~/work/fam_pay_task/youtube_fetch_api/cron_job.log')
-# ]
+CRONJOBS = [
+     ('*/5 * * * *', 'YoutubeFetchApi.api.cron.CallYoutubeApi','>> ~/Desktop/Django/YoutubeFetchApi/cron_job.log')
+ ]
 
 ROOT_URLCONF = 'YoutubeFetchApi.urls'
 

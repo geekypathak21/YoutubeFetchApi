@@ -1,7 +1,7 @@
 # YoutubeFetchApi
 An API to fetch latest videos sorted in reverse chronological order of their publishing date-time from YouTube for a given tag/search query in a paginated response.
 
-API will continuously in background call (async) with interval of two min for fetching the latest videos for a predefined search query and will store the data of videos in a database with proper indexes.
+API will continuously in background call (async) with interval of 10 min for fetching the latest videos for a predefined search query and will store the data of videos in a database with proper indexes.
 ## Screenshots
 
 For visualization through a dashboard one may directly run the app locally and the get the UI provided through django-rest-framework.
@@ -22,4 +22,4 @@ Used Cron Jobs [django_cron](https://django-cron.readthedocs.io/en/latest/introd
 - Add all the available API keys in `setting.py` variable `GOOGLE_API_KEYS` in this manner`['API_KEY_1','API_KEY_2',...]`
 - For getting an API key follow [this](https://developers.google.com/youtube/v3/getting-started)
 - Setup crontab to run Job, Follow [this](https://django-cron.readthedocs.io/en/latest/installation.html)
-- Run server using `python mange.py runserver`
+- Run server using `python manage.py runserver`
