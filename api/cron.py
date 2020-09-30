@@ -12,7 +12,7 @@ from datetime import datetime, timedelta
 
 
 class CallYoutubeApi(CronJobBase):
-    RUN_EVERY_MINS = 1  # runs after every 5 minutes
+    RUN_EVERY_MINS = 1  # runs after every 1 minutes
 
     schedule = Schedule(run_every_mins=RUN_EVERY_MINS)
     code = 'api.call_youtube_api'    # a unique code
@@ -20,7 +20,7 @@ class CallYoutubeApi(CronJobBase):
     def do(self):
         apiKeys = settings.GOOGLE_API_KEYS
         time_now = datetime.now()
-        last_request_time = time_now - timedelta(minutes=5)
+        last_request_time = time_now - timedelta(minutes=1)
 
         #####################################################
 
